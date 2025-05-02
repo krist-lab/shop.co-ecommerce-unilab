@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "satoshi";
+  src:
+    url("../fonts/Satoshi-Variable.ttf");
+}
+@font-face {
+  font-family: "integral-cf-bold";
+  src:
+    url("../fonts/Fontspring-DEMO-integralcf-bold.otf");
+}
+:root {
+    --secondary: #000;
+    --primary: #F2F0F1; 
+    --white: #fff;
+
+  }
+
+  .bg-secondary{
+    background-color: var(--secondary);
+  }
+  .bg-primary{
+    background-color: var(--primary);
+  }
+  .text-light{
+    color: var(--white);
+  }
+  .text-dark{
+    color: var(--secondary);
+  }
+  .medium{
+    font-weight: 500;
+  }
+  .capitalize{
+    text-transform: capitalize;
+  }
+  .container{
+    max-width: 1240px ;
+    width: 90% ;
+    margin: 0 auto;
+  }
+
+  .d-flex{
+    display: flex;
+  }
+.justify-between{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+.login-signup-reminder{
+    padding-block: 10px;
+}
+.login-signup-reminder {
+  .text-container {
+    font-size: 14px;
+    font-family: "satoshi";
+
+    a {
+      text-decoration: underline;
+      text-decoration-color: #fff;
+    }
+  }
+
+  img {
+    cursor: pointer;
+  }
+}
+.logo{
+  font-family: "integral-cf-bold";
+  font-size: 32px;
+}
+
+header{
+  padding-block: 24px;
+}
+.search-wrapper{
+
+  border-radius: 62px;
+  flex-grow: 1;
+  padding: 12px  16px;
+  gap:12px;
+  input{
+    width: 100%;
+    background-color: transparent;
+    font-family: "satoshi";
+  }
+}
+.main-nav{
+  gap: 24px;
+}
+.cta-wrapper{
+  gap: 14px;
+}
+.header-wrapper{
+  gap: 40px;
+}
+input{
+
+}
