@@ -27,8 +27,14 @@
   .text-dark{
     color: var(--secondary);
   }
+  .text-center{
+    text-align: center;
+  }
   .medium{
     font-weight: 500;
+  }
+  .bold{
+    font-weight: 700;
   }
   .capitalize{
     text-transform: capitalize;
@@ -42,12 +48,24 @@
   .d-flex{
     display: flex;
   }
+  .d-inline-block{
+    display: inline-block;
+  }
+  .d-block{
+    display: block;
+  }
 .justify-between{
     justify-content: space-between;
 }
 .align-center{
     align-items: center;
 }
+
+.border-bottom{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
 .login-signup-reminder{
     padding-block: 10px;
 }
@@ -84,6 +102,8 @@ header{
     width: 100%;
     background-color: transparent;
     font-family: "satoshi";
+    border: none;
+    outline: none;
   }
 }
 .main-nav{
@@ -95,6 +115,145 @@ header{
 .header-wrapper{
   gap: 40px;
 }
-input{
+.welcome-section{
+  .welcome-wrapper{
+    height: 663px;
+    .content-wrapper{
+      margin-top: 100px;
+      width: 50%;
+      h1{
+        font-family: "integral-cf-bold";
+        font-size: 64px;
+        line-height: 64px; 
+        margin-bottom: 32px;
+      }
+      p{
+        font-family: "satoshi";
+        line-height: 22px;
+        opacity: 60%; 
+        margin-bottom: 32px;
+      }
+      a{
+        padding: 15px 68px;
+        border-radius: 62px;
+        margin-bottom: 48px;
+      }
+      .statistics-wrapper{
+        font-family: "satoshi";
+        gap:64px;
+        div {
+          &:nth-child(2) {
+            position: relative;
+            &::before{
+              position: absolute;
+              top:0;
+              left: -32px;
+              content: "";
+              width: 1px;
+              height: 74px;
+              display: block;
+              background-color: var(--secondary);
+              opacity: 10%;
+            }
+            &::after{
+              content: "";
+              position: absolute;
+              top: 0;
+              right: -32px;
+              width: 1px;
+              height: 74px;
+              display: block;
+              background-color: var(--secondary);
+              opacity: 10%;
+            }
+          }
+        }
+        span{
+          font-size: 40px;
+          line-height: 50px;
+        }
+        p{
+          line-height: 22px;
+          opacity: 60%;
+        }
+        
+      }
+      
+    }
+    .cover-wrapper{
+      position: relative;
+      width: 590px;
+      img {
+        display: block;
+        &:first-child{
+          width: 100%;
+          height: 100%;
+        }
+        &:nth-child(2){
+          position: absolute;
+          left: 50px;
+          top: 40%;
+        }
+        &:nth-child(3){
+          position: absolute;
+          right: 0;
+          top: 80px;
+
+        }
+      }
+    }
+  }
+  .partners-wrapper{
+   padding-block: 42px;
+   img{
+    display: block;
+   }
+  }
 
 }
+
+.new-arrivals, .top-selling{
+  margin-top: 72px;
+
+  h2{
+    font-family: "integral-cf-bold";
+    font-size: 48px;
+    margin-bottom:55px;
+  }
+  article{
+  font-family: "satoshi";
+      .product-header{
+        border-radius: 20px;
+        margin-bottom: 16px;
+      }
+      .product-body{
+        h3{
+          margin-bottom: 8px;
+        }
+        .rating{
+          margin-bottom: 8px;
+          gap:12px;
+          .rate{
+            font-size: 14px;
+            .max-rate{
+              opacity: 40%;
+            }
+          }
+        }
+       .price{
+        font-size: 24px;
+       }
+      }
+  }
+  .view-all-wrapper{
+    padding-bottom: 64px;
+    a{
+      padding: 15px 80px;
+      border-radius: 62px;
+      border:1px solid rgba(0,0,0,0.1);
+      margin-top: 36px;
+    }
+  }
+  
+}
+
